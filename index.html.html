@@ -1,0 +1,82 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE - Proteção Animal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="ios7-paw_icon-icons.com_50209.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f6c45b; /* Fundo amarelo */
+            font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+            text-align: center;
+            padding: 30px;
+            margin: 0; /* Corrigido para 0 */
+        }
+        .container {
+            max-width: 800px; /* Largura máxima do contêiner*/
+            margin: 0 auto; /* Centraliza o contêiner*/
+            padding: 20px; /* Espaçamento interno*/
+            background-color: white; /* Cor de fundo opcional*/
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+        }
+        .logo {
+            max-width: 80px; /* Define a largura máxima da logo */
+            height: auto; /* Mantém a proporção */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #d687ba; /* Cor de fundo do botão */
+            border: none; /* Remove bordas padrão */
+            border-radius: 5px; /* Bordas arredondadas */
+            color: white; /* Cor do texto */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+        button:hover {
+            background-color: #7e9cd3; /* Cor ao passar o mouse */
+        }
+        .espaco {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px; /* Reduzir padding em telas menores */
+            }
+            .container {
+                padding: 15px; /* Reduzir padding no contêiner */
+            }
+            button {
+                width: 100%; /* Botão ocupa toda a largura */
+                font-size: 18px; /* Aumenta a fonte do botão em dispositivos menores */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <header>
+        <img src="hopelogo.png" alt="Logo" class="logo">
+    </header>
+    <h1>Hope - ONG de Proteção Animal</h1>
+    <p><b>Quem somos?</b><br>A ONG Hope é um projeto que nasceu de uma forma inesperada, mas que foi criado por pessoas que têm verdadeiro amor à causa animal. São pessoas que lutam para salvar uma vida animal, pois para nós, essas vidas valem muito! Não medimos esforços para que isso aconteça. Em 3 anos de atuação, mais de 180 animais, entre gatos e cachorros, foram salvos e já se encontram adotados. Lutamos do começo ao fim por eles.</p>
+    <p><b>Missão</b><br>Resgatar e proteger animais abandonados ou vítimas de maus tratos, oferecer todos os cuidados que eles necessitam e encontrar um lar que ofereça amor e proteção.</p>
+    <p><b>Visão</b><br>Nos tornamos uma ONG modelo em proteção e resgate animal, através do nosso trabalho sério, honesto e comprometido com a causa animal.</p>
+    <p><b>Valores</b><br>Comprometimento, transparência, seriedade, honestidade e amor pela causa animal.</p>
+    <h2>Você também pode fazer parte dessa história. <br>Nos ajude a salvar mais vidas!</h2>
+    <input type="text" id="pixKey" value="47253630000131" style="opacity: 0; position: absolute;"/>
+    <button onclick="copyText()">Copiar Chave Pix CNPJ</button>
+
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("pixKey");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Chave Pix copiada: " + copyText.value);
+        }
+    </script>
+</div>
+</body>
+</html>
